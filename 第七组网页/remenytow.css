@@ -1,0 +1,17 @@
+
+.zong2zhong{
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+	height: 300px;
+	width: 150px;
+	background-image: url(img/denim.png);
+}
+.zong1zhong1{
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	height: 80px;
+	width: 140px;
+	background-image: url(img/light_alu.png);	
+}

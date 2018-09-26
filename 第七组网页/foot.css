@@ -1,0 +1,47 @@
+.footbeijing{margin-left: 10%;
+	width: 80%;
+	height: 200px;
+	float: left;
+	background-image: url(img/light_alu.png);	}
+.footzuoce{
+	margin-left: 50px;
+	width: 300px;
+	margin-top: 50px;
+	height: 100px;
+}
+.footzuoce ul{}
+.footzuoce ul li{
+	float: left;
+	height: 30px;
+	width: 120px;
+}
+.footzuoce li a{
+	font-size: 18px;
+	color: #0CC;	
+	text-decoration: none;
+}
+.footzuoce li a:hover{
+	font-size: 20px;
+	color:#3FC;	
+	text-decoration: none;
+}
+.footyouce{
+	float:right;
+	margin-right: 50px;
+	margin-top: -100px;
+	width: 300px;
+	height:100px;
+	}
+.footimgz{
+		float: left;
+	width: 80px;
+	margin-left: 10px;
+	height: 90px;
+	margin-top: 5px;}	
+.footimg{
+	float: left;
+	width: 80px;
+	
+	height: 70px;
+	
+}

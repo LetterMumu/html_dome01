@@ -1,0 +1,149 @@
+.zong1{
+	float: left;
+	height: 400px;
+	width: 75%;
+	margin-left: 12%;
+	background-image: url(img/light_alu.png);
+	margin-bottom: 7px;
+}
+.zong1 a{
+	font-size: 18px;
+	color: #333;
+	text-decoration: none;
+}
+.zong1zuo{
+	margin-top: 5px;
+	margin-left: 10px;
+	float: left;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-color: #333;
+	border-right-color: #333;
+	border-bottom-color: #333;
+	border-left-color: #333;
+	
+	height: 300px;
+	width: 500px;
+}
+.zong1zhong{
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+	height: 300px;
+	width: 150px;
+	
+}
+.zong1zhonga{
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+	height: 300px;
+	width: 390px;
+	
+}
+.zong1zhong1{
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	height: 80px;
+	width: 140px;
+	
+	margin-bottom: 5px;
+}
+.zong1you{
+	float: left;
+	margin-top: 5px;
+	margin-left: 5px;
+	height: 300px;
+	width: 200px;}
+
+.zong1z{
+	
+	color: #666;
+	margin-top: 5px;
+	margin-left: 10px;
+	height: 30px;
+	width: 100px;
+}
+.zong1z1{
+	
+	color: #666;
+	margin-top: 5px;
+	margin-left: 10px;
+	height: 20px;
+	width: 100px;
+}
+.zong1you1{
+	float: left;
+	margin-left: 1px;
+	height: 250px;
+	width: 180px;
+}
+.zong1you1 ul{
+	float: left;
+	margin-left: -30px;
+	margin-top: -5px;
+	
+	}
+.zong1you1 ul li{
+	font-size: 12px;
+	}
+.zong2zuo{
+	float: left;
+	margin-top: 5px;
+	margin-left: 10px;
+	height: 300px;
+	width: 390px;
+
+}
+.zong2zuo1{
+	float: left;
+	height: 80px;
+	width: 120px;
+	
+}
+.zong2you{
+	margin-top: 5px;
+	margin-left: 10px;
+	float: left;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-color: #333;
+	border-right-color: #333;
+	border-bottom-color: #333;
+	border-left-color: #333;
+	
+	height: 300px;
+	width: 500px;
+}
+.k1{
+	float: left;
+	margin-top: 25px;
+	margin-left: 5px;
+	height: 100px;
+	width: 120px;
+	
+	font-size: 12px;	
+}
+.k1 a{
+	text-decoration: none;
+	color: #333;
+}
+.k1 a:hover{
+	text-decoration: none;
+	color:#000;
+}
+.zong1you1 ul li a{
+	font-size: 14px;
+	text-decoration: none;
+	color: #666;
+	}
+.zong1you1 ul li a:hover{
+	font-size: 14px;
+	text-decoration: none;
+	color: #333;
+	}

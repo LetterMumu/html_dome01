@@ -1,0 +1,43 @@
+.zuoce{
+margin-left: 2%;
+width: 10%
+float: left;
+}
+.zhuti{
+	margin-left: 10%;
+	width: 80%;
+	height: 200px;
+	float: left;
+	background-image: url(img/%E6%9C%AA%E6%A0%87%E9%A2%98-1.png);	
+	}
+.zhuti ul {
+	float: left;
+	vertical-align: baseline;
+}
+.zhuti li {
+	float: left;
+	width: 40px;
+	margin-left: 5px;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-color: #CCC;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	vertical-align: baseline;
+	font-size: 16px;
+	color: #00C;
+}
+.zuoce a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #FFF;
+}
+.zuoce a:hover{
+	text-decoration: none;
+	font-size: 18px;
+	color:#aaa;
+}

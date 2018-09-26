@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+    
+	#loginArea{width:260px;font-size:12px;}
+	#loginArea p {margin: 0 0 3px;width:100%;}
+	label{background-color:#ccc;display:block;float:left ;width:100px;text-align:center ;margin-right:2px;padding:2px 0;}
+	input {display:block;float:left;width:150px;margin:2px;}	
+	input.button{width:60px;margin-right:5px}
+	fieldset{border:none;padding:0;margin:0;}
+	legend{font-weight:bold;margin-bottom:12px;}
+</style>	
+<script type="text/javascript">
+function validate_required(target){
+    if (target.value==null||target.value=="") {
+        return false;
+    } else {
+        return true;
+    }
+	}
+	function valid_string_equal(str1,str2){
+	    if(str1==str2){
+	        return true;
+	    }	
+	    return false;
+	}
+	function valid_character(ch){
+		if (ch>="0"&&ch<="9") {
+        return false;
+    } else {
+        return true;
+    }
+	}
+	function valid_length(str,min,max){
+	  if(str.length>=min&&str.length<=max){
+	      return true;
+    } else {
+        return false;
+    }	
+	}
+	function validate_email(email){
+    var apos=email.indexOf("@");
+    if(apos==-1){
+        return false;
+    }  
+    var dotpos=email.lastIndexOf(".");
+    if (dotpos-apos<2) {
+    	return false;
+    }
+    return true;
+}
+function validForm(){
+		var userName=document.getElementById("userName");
+		var pwd=document.getElementById("pwd");
+		var repwd=document.getElementById("repwd");
+		var email=document.getElementById("email");
+		if(!validate_required(userName)){
+			alert("请输入登录使用的用户名！");
+			document.getElementById("userName").focus();
+			return false;	
+		}
+		if(!validate_required(pwd)){
+			alert("请输入登录使用的密码！");
+			document.getElementById("pwd").focus();
+			return false;	
+		}
+		if(!validate_required(repwd)){
+			alert("请输入重复密码！");
+			document.getElementById("repwd").focus();
+			return false;	
+		}
+		if(!validate_required(email)){
+			alert("请输入邮箱地址！");
+			document.getElementById("email").focus();
+			return false;	
+		}
+
+		if(!valid_character(userName.value.charAt(0))){
+			alert("登录用户名的首字符不能使数字！");
+			document.getElementById("userName").focus();
+			return false;			
+		}
+		if(!valid_length(userName.value,6,20)){
+			alert("登录用户名的长度应当在6和20个字符(含)之间！");
+			document.getElementById("userName").focus();
+			return false;			
+		}		
+		if(!valid_string_equal(pwd.value,repwd.value)){
+			alert("两次输入的密码必须保持一致！");
+			document.getElementById("pwd").focus();
+			return false;	
+		}		
+		
+		if(!validate_email(email.value)){
+			alert("请输入合法的邮箱地址，如aa@yahoo.com！");
+			document.getElementById("email").focus();
+			return false;			
+		}
+				
+		alert("验证通过");
+    return true;
+	}
+</script>
+<title>驭风者影音播放平台</title>
+
+</head>
+
+<body onLoad="centerObject('loginArea')"  >
+<div align="center">
+<form id="loginForm" name="loginForm" onSubmit="return validForm();">
+ <div id="loginArea">
+      <fieldset>
+        <legend>用户注册</legend>
+      <p>
+        <label>登录用户名</label>
+        <input id="userName" name="userName" type="text" tabindex="1"/>
+      </p>
+      <p>
+        <label>登录密码</label>
+        <input id="pwd" name="pwd" type="password" tabindex="2"/>
+      </p>
+      <p>
+        <label>重复输入密码</label>
+        <input id="repwd" name="repwd" type="password" tabindex="3"/>
+      </p>
+      <p>
+        <label>有效邮箱地址</label>
+        <input id="email" name="email" type="text" tabindex="4"/>
+      </p> 
+      <p >
+         	<input  type="submit" id="btlogin" class ="button" value="提交" tabindex="3"/>
+         	<input  type="button" id="btreset" class ="button" value="取消" tabindex="4"/>
+      </p>
+      </fieldset>
+  </div>
+</form>
+</div>
+</body>
+</html>
